@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/tv_player_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn:"/>
+
+
+    <TextView
+        android:id="@+id/tv_winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winner:"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESTART"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+    <GridLayout
+        android:id="@+id/game_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:background="@drawable/board"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cell00"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:contentDescription="cell 0,0" />
+
+        <Button
+            android:id="@+id/cell01"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:contentDescription="cell 0,1"/>
+
+        <Button
+            android:id="@+id/cell02"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:contentDescription="cell 0,2"/>
+
+        <Button
+            android:id="@+id/cell10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:contentDescription="cell 1,0"/>
+
+        <Button
+            android:id="@+id/cell11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:contentDescription="cell 1,1"/>
+
+        <Button
+            android:id="@+id/cell12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:contentDescription="cell 1,2"/>
+        <Button
+            android:id="@+id/cell20"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:contentDescription="cell 2,0"/>
+
+        <Button
+            android:id="@+id/cell21"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:contentDescription="cell 2,1"/>
+
+        <Button
+            android:id="@+id/cell22"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:contentDescription="cell 2,2"/>
+
+    </GridLayout>
+</LinearLayout>

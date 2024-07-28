@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_pvp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player vs Player"
+        android:layout_below="@id/tv_welcome"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_pvc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player vs AI"
+        android:layout_below="@id/btn_pvp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
